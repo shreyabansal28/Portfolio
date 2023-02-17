@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Shreya Bansal</title>
+</head>
+
+<body>
+  {{>navbar}}
+  <br><br>
+  {{!Hero sections start--------------------------}}
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        {{!Right side}}
+        <div class="row">
+          <div
+            class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+            <h1>Shreya Bansal</h1>
+            <h1> -B.Tech Undergraduate Student</h1><br>
+            <p> I am a third-year engineering student at the National Institute of Technology, Kurukshetra, India. My
+              degree emphasis is in Computer Engineering, and I have completed 75% of my major's requirements, including
+              the required classes as outlined in your program.
+              Academically, my outstanding result, especially in mathematics and computer science courses, proved my
+              strong technical and analytical aptitude. On top of that, academic awards such as Merit Scholar as well as
+              project experience further demonstrated solid learning ability and capability to work.
+              I am a highly motivated individual with analytical and technical skills to deliver value and innovation in
+              Software Development/Fullstack Engineer profile.
+            </p>
+
+          </div>
+          {{!left side}}
+          <div class="col-md-6 col-12 hero-text order-md-1 order-0" style="float: right;">
+            <figure>
+              <img src="images/mypic.png" id="mypic" alt="my photo" style="height: 500px; width=500px ;padding:auto" />
+            </figure>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!Hero sections ends--------------------------}}
+
+   <br><br>
+
+  {{!About us start--------------------------}}
+   {{>about}}
+  {{!About us ends--------------------------}}
+
+    {{!Skills start--------------------------}}
+   {{>service}}
+  {{!Skills ends--------------------------}}
+
+  {{>map}}
+  {{>contact}}
+  {{>footer}}
+
+  <script src="../jq/jquery" type="text/javascript"></script>
+  <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+
+</html>
