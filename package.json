@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js -e js,hbs"
+    "dev": "nodemon src/app.js -e js,hbs",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +19,8 @@
     "jquery": "^3.6.3",
     "mongoose": "^6.9.1",
     "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
